@@ -1,0 +1,16 @@
+<header>
+  <h1>Swipe me!</h1>
+  <ul>
+    <li ng-repeat="swipeElement in swiperController.swipeElements">
+      <a ui-sref="swiper.box({boxId: swipeElement.id})">{{ swipeElement.name }}</a>
+    </li>
+  </ul>
+</header>
+<div ui-view></div>
+<div class="more-content">
+  <h1>There is more content here!</h1>
+  <img src="https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg" alt="Cat" />
+  <p>
+    <i>A cat.</i>
+  </p>
+</div>

@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div
+    class="boxes-container"
+    ng-class="{'bouncing' : boxesController.bouncing}"
+    ng-style="{transform: boxesController.transformValue}"
+  >
+    <div
+      class="box"
+      ng-class="{'active' : renderedBox.id == boxesController.box.id}"
+      ng-repeat="renderedBox in boxesController.renderedBoxes"
+    >
+      <h1>{{ renderedBox.name }}</h1>
+    </div>
+  </div>
+</div>

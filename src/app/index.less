@@ -1,0 +1,96 @@
+/**
+ *  Do not remove this comments bellow. It's the markers used by wiredep to inject
+ *  less dependencies when defined in the bower.json of your dependencies
+ */
+// bower:less
+// endbower
+
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap/less/variables.less
+ */
+@navbar-inverse-link-color: #5AADBB;
+@icon-font-path: '../../bower_components/bootstrap/fonts/';
+
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  li {
+    display: inline;
+    padding: 10px;
+  }
+  li a {
+    color: #fff;
+    &:hover {
+      color: #95a5a6;
+      text-decoration: none;
+    }
+  }
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.boxes-container {
+  white-space: nowrap;
+}
+
+.box {
+  width: 100%;
+  height: 90vh;
+  background-color: #bdc3c7;
+  display: inline-block;
+  text-align: center;
+  h1 {
+    margin-top: 50vh;
+    font-size: 30px;
+    color: #ecf0f1;
+  }
+  &.active {
+    background-color: #2ecc71;
+    h1 {
+      color: #fff;
+    }
+  }
+}
+
+.more-content {
+  background-color: #1abc9c;
+  text-align: center;
+  color: #fff;
+  overflow: auto;
+  h1 {
+    font-size: 30px;
+  }
+  img {
+    width: 300px;
+    padding: 20px;
+  }
+}
+
+.bouncing {
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+/**
+ *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+ *  all your less files automatically
+ */
+// injector
+// endinjector
